@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Button, Typography, Slider, Switch, FormControlLabel } from '@mui/material';
+import AccessibilidadeFocus from '../AccessibilidadeFocus';
 
 export default function ControleAccessibilidade() {
   const [fontSize, setFontSize] = useState(16);
@@ -193,6 +194,7 @@ export default function ControleAccessibilidade() {
           </Typography>
         </Box>
       </Box>
+      <AccessibilidadeFocus readText={readText} activeReading={activeReading} />
     </Box>
   );
 }
